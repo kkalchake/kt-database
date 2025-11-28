@@ -12,3 +12,16 @@ A side-by-side comparison of how the body and mind interpret and respond to stre
 | **Outcome / Behavior** | Can lead to feeling more prone to feeling threatened. Associated with worse immune function and developing dementia. | Associated with making more accurate decisions and doing better on tasks. Linked to better brain aging and a reduced risk of developing dementia. Athletes who win more often show this response. |
 | **Effect on Telomeres** | A predominant habitual response can, over time, work itself into your cells and grind down your telomeres. | A predominant response may help shield your telomeres from some of the worst effects of chronic stress. Those who felt challenge had longer telomeres. |
 | **Learning / Shaping** | N/A | You can learn to feel challenged instead. You can shape stress to your purpose by shifting the way you view those events. |
+
+
+# Threat vs. Challenge Response: Interpretations and Triggers
+
+A comparison of how interpretation shapes the stress response.
+
+## Summary Table
+
+| **View / Interpretation Triggering Response** | **Threat Response** | **Challenge Response** |
+|----------------------------------------------|----------------------|-------------------------|
+| **View of Self / Resources** | The implicit view of not having what it takes, or being prepared for withdrawal and defeat. | The view that you can shape stress to your purpose. The conviction that you have the resources to surmount the difficulties. |
+| **View of the Event** | Viewing the stressor as a difficult or painful event that must be tolerated. | Viewing the stressor as a challenge to be surmounted and an opportunity to engage fully. |
+| **View of Arousal / Body** | Interpreting the body's physiological arousal as a sign of fear, anxiety, or a negative state. | Interpreting the body's arousal as a sign that your body is "trying to help me," and that the responses are "designed to help me focus on the tasks at hand." |
