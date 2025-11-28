@@ -1,6 +1,19 @@
 # Threat vs. Challenge Response
 
-A side-by-side comparison of how the body and mind interpret and respond to stress.
+## "Your cells are listening to your thoughts.” 
+Stress reactions happen within seconds, and interpretation determines whether the body produces a **threat response** or a **challenge response**.
+
+- “Our emotions are not pure reactions to the world; they are our own fabrications.”
+
+Knowing how emotions are created is powerful. To shift your response from "threat" to "challenge"
+ - you can think about your body’s arousal as a source of fuel
+ - teach your brain to predict it as helpful
+ - shape stress to your purpose
+ - revise the story 
+ - and choose to feel challenged. 
+
+The tables below organize information about both response types to show how thoughts, interpretation, physiology, and behavior separate a threat response from a challenge response. They highlight how viewing stress as harmful or helpful creates different psychological, hormonal, and cellular outcomes.
+
 
 ## Summary Table
 
@@ -25,3 +38,6 @@ A comparison of how interpretation shapes the stress response.
 | **View of Self / Resources** | The implicit view of not having what it takes, or being prepared for withdrawal and defeat. | The view that you can shape stress to your purpose. The conviction that you have the resources to surmount the difficulties. |
 | **View of the Event** | Viewing the stressor as a difficult or painful event that must be tolerated. | Viewing the stressor as a challenge to be surmounted and an opportunity to engage fully. |
 | **View of Arousal / Body** | Interpreting the body's physiological arousal as a sign of fear, anxiety, or a negative state. | Interpreting the body's arousal as a sign that your body is "trying to help me," and that the responses are "designed to help me focus on the tasks at hand." |
+
+## Summary
+The threat response narrows your capacity and wears on your cells, but the challenge response expands your capacity and protects your health. You cannot control every stressor, but you can reshape your interpretation, choose to feel challenged, and influence your telomeres, immune cells, performance, and long-term resilience.
