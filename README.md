@@ -15,3 +15,5 @@ To achieve above, this database holds information and suggestions to live in a h
 ---------------------------------
 
 I examine source thoughtfully,outline a lesson, then I apply lesson to my personal life, document progrss and reflect on effectivness of the newly acquired knowledge/skill
+
+These are my personal notes: what stayed with me, what sparked something, and what I want to remember. The ideas catching my attention don't just inform me. They inspire me to continiously reshaping the way I see the world.
