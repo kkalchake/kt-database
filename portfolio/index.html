@@ -1,0 +1,456 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Kamila Kalchakeeva, Kyrgyz Language & Localization Portfolio</title>
+<style>
+  :root{
+    --bg:#faf8f4; --bg2:#ffffff; --text:#211d1a; --muted:#635b52;
+    --accent:#a3402a; --accent2:#2f6f5e; --line:#e6ddd0; --chip:#f1ebe0;
+    --en:#5b5347; --ky:#211d1a;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#171410; --bg2:#1f1b16; --text:#f1ece2; --muted:#b9ad9c;
+      --accent:#e0714f; --accent2:#5fb59a; --line:#332c23; --chip:#26211a;
+      --en:#a89a86; --ky:#f1ece2;
+    }
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0; background:var(--bg); color:var(--text);
+    font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;
+    line-height:1.55;
+  }
+  .wrap{max-width:760px; margin:0 auto; padding:64px 24px 100px;}
+  header.hero{margin-bottom:40px;}
+  .kicker{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+    text-transform:uppercase; letter-spacing:.14em; font-size:12px;
+    color:var(--accent); font-weight:600; margin-bottom:10px;
+  }
+  h1{font-size:2.3rem; margin:0 0 8px; line-height:1.15;}
+  .role-line{font-size:1.15rem; color:var(--muted); margin:0 0 20px;}
+  .contact{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+    font-size:14px; color:var(--muted); display:flex; flex-wrap:wrap; gap:6px 14px;
+  }
+  .contact a{color:var(--muted);}
+
+  .toc{
+    display:flex; flex-wrap:wrap; align-items:center; gap:8px 10px;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+    font-size:13px; margin-bottom:48px; padding-bottom:24px; border-bottom:1px solid var(--line);
+  }
+  .toc-label{
+    text-transform:uppercase; letter-spacing:.12em; font-size:11px; font-weight:700;
+    color:var(--muted); margin-right:2px; width:100%;
+  }
+  .toc a{
+    color:var(--accent2); text-decoration:none; padding:5px 12px; border:1px solid var(--line);
+    border-radius:999px; background:var(--chip);
+  }
+  .toc a:hover{border-color:var(--accent2);}
+
+  .section-details{margin-bottom:56px; scroll-margin-top:20px;}
+  .section-details > summary{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+    font-size:12px; text-transform:uppercase; letter-spacing:.13em;
+    color:var(--accent2); font-weight:700; margin:0 0 18px;
+    border-bottom:1px solid var(--line); padding-bottom:10px;
+    cursor:pointer; list-style:none; display:flex; align-items:center; gap:8px;
+  }
+  .section-details > summary::-webkit-details-marker{display:none;}
+  .section-details > summary:before{content:"▸"; font-size:10px; color:var(--muted); flex-shrink:0;}
+  .section-details[open] > summary:before{content:"▾";}
+
+  p{margin:0 0 14px;}
+  .lede{font-size:1.05rem;}
+  .card{
+    background:var(--bg2); border:1px solid var(--line); border-radius:14px;
+    padding:26px 28px; margin-bottom:18px;
+  }
+  .card h3{margin:0 0 4px; font-size:1.2rem;}
+  .meta-row{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+    font-size:13px; color:var(--muted); margin-bottom:16px; display:flex; flex-wrap:wrap; gap:8px 16px;
+  }
+  .tag{
+    background:var(--chip); border-radius:999px; padding:3px 11px; font-size:12px;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; color:var(--text);
+  }
+  audio{width:100%; margin:10px 0 4px; accent-color:var(--accent);}
+  .audio-caption{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+    font-size:13px; color:var(--muted);
+  }
+  .line-pair{
+    display:grid; grid-template-columns:66px 1fr; gap:2px 12px;
+    padding:10px 0; border-top:1px solid var(--line);
+  }
+  .line-pair:first-of-type{border-top:none;}
+  .speaker{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+    font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:.04em;
+    padding-top:3px; grid-row:span 2;
+  }
+  .speaker.joy{color:var(--accent);}
+  .speaker.sadness{color:var(--accent2);}
+  .en{color:var(--en); font-size:.96rem;}
+  .ky{color:var(--ky); font-weight:600;}
+  blockquote{
+    margin:0; font-style:italic; font-size:1.05rem; color:var(--text);
+    border-left:3px solid var(--accent); padding-left:18px;
+  }
+  .cite{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+    font-size:13px; color:var(--muted); margin-top:12px; font-style:normal;
+  }
+  .case-shot{width:100%; border-radius:10px; border:1px solid var(--line); display:block; margin-bottom:8px;}
+  .case-shot-cap{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+    font-size:12px; color:var(--muted); margin-bottom:22px;
+  }
+  .verdict-good{color:var(--accent2); font-weight:700;}
+  .verdict-bad{color:var(--accent); font-weight:700;}
+  .grid2{display:grid; grid-template-columns:1fr 1fr; gap:20px;}
+  @media(max-width:600px){.grid2{grid-template-columns:1fr;}}
+  .email-shot{width:100%; border-radius:10px; border:1px solid var(--line); display:block; margin-bottom:10px;}
+  .email-label{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+    font-size:12px; text-transform:uppercase; letter-spacing:.08em; color:var(--accent2);
+    font-weight:700; margin-bottom:8px;
+  }
+  .translation{font-size:.95rem; margin-top:0;}
+  details{margin-top:16px;}
+  summary{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+    font-size:13px; color:var(--accent2); cursor:pointer; font-weight:600;
+    list-style:none;
+  }
+  summary::-webkit-details-marker{display:none;}
+  summary:before{content:"+ "; }
+  details[open] summary:before{content:"− "; }
+  details[open] summary{margin-bottom:6px;}
+  footer{
+    border-top:1px solid var(--line); padding-top:24px; margin-top:64px;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+    font-size:13px; color:var(--muted);
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="hero">
+    <div class="kicker">Kyrgyz Language & AI Localization</div>
+    <h1>Kamila Kalchakeeva</h1>
+    <p class="role-line">Native Kyrgyz speaker (Bishkek / Northern dialect) · Software Engineer working daily with AI model validation & calibration · Voice &amp; localization background</p>
+    <div class="contact">
+      <span>New York, NY</span>
+      <span>·</span>
+      <a href="mailto:kkalchakeeva@gmail.com">kkalchakeeva@gmail.com</a>
+    </div>
+  </header>
+
+  <nav class="toc" aria-label="Contents">
+    <span class="toc-label">Contents</span>
+    <a href="#language-background">Language Background</a>
+    <a href="#why-this-role">Why This Role</a>
+    <a href="#ai-case-study">AI Language Accuracy Case Study</a>
+    <a href="#voice-dubbing">Voice &amp; Dubbing: Inside Out</a>
+  </nav>
+
+  <details class="section-details" id="language-background" open>
+    <summary>Language Background</summary>
+    <p class="lede">
+      I grew up between Bishkek and At-Bashy in the Naryn region, so I've lived inside both the standard Bishkek
+      dialect and a more rural, regional way of speaking Kyrgyz. I studied journalism at Kyrgyz-Turkish Manas
+      University, where coursework was taught and examined entirely in Kyrgyz and Turkish, so I spent years reading
+      and writing formal Kyrgyz, not just speaking it at home. I'm also fluent in Russian and Turkish.
+    </p>
+    <p>
+      That range matters for AI language work specifically. Almost nobody in Kyrgyzstan speaks "pure" textbook
+      Kyrgyz day to day. Real spoken Kyrgyz is layered with Russian loanwords, a growing number of English ones, and
+      occasional Turkish influence, and knowing why a word gets borrowed is as important as knowing the word itself.
+    </p>
+    <p>
+      A simple example: Kyrgyz speakers almost never use a native word for "bed," they use the Russian loanword
+      instead. That isn't sloppy Kyrgyz, it's history. Kyrgyz people were traditionally nomadic, and a bed frame
+      doesn't travel well, so households slept on floor bedding, "жер төшөк." There was no established native word
+      for a raised bed frame when settled housing, and Russian furniture vocabulary, arrived. An AI that "corrects"
+      this kind of loanword back to an invented "pure" Kyrgyz term would actually be wrong, not more accurate.
+    </p>
+  </details>
+
+  <details class="section-details" id="why-this-role" open>
+    <summary>Why This Role</summary>
+    <p class="lede">
+      I work with AI models professionally. At American Express I validate, calibrate, and guide model behavior for
+      production use cases, so working carefully with a model's output isn't new territory for me, it's a discipline
+      I already practice. I'm also multilingual and have lived abroad for years, which means I know firsthand what
+      it feels like to miss your mother tongue and watch it thin out online for lack of content. I want this role
+      for Kyrgyz speakers scattered far from home who want an AI that actually speaks their language correctly, not
+      an approximation of it, and just as much for the younger generation still in Kyrgyzstan who grew up speaking
+      mostly Russian and are actively trying to reconnect with their native tongue. Both groups need the same thing,
+      Kyrgyz that sounds real and accurate, not invented or flattened. I volunteer extensively in tech, especially
+      supporting women and underrepresented folks, and this feels like a direct extension of that: a way to give
+      back to my language, my roots, my people.
+    </p>
+  </details>
+
+  <details class="section-details" id="ai-case-study" open>
+    <summary>AI Language Accuracy Case Study</summary>
+    <p>
+      I actively test how AI models handle culturally loaded Kyrgyz vocabulary, words that carry meaning beyond
+      their dictionary definition. This is a real comparison I ran, prompting both models with the same question:
+      <strong>«раматылык деген эмне?»</strong> ("What does <em>ramatylyk</em> mean?"), a word used to refer
+      respectfully to someone who has passed away.
+    </p>
+
+    <div class="grid2">
+      <div>
+        <img class="case-shot" src="assets/ramatylyk-gemini.jpg" alt="Gemini's response to раматылык деген эмне">
+        <div class="case-shot-cap">Google Gemini's response</div>
+      </div>
+      <div>
+        <img class="case-shot" src="assets/ramatylyk-grok.jpg" alt="Grok's response to раматылык деген эмне">
+        <div class="case-shot-cap">Grok's response</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>What went right</h3>
+      <p>
+        Grok's core definition is accurate: <em>«Раматылык (же ыраматылык) деген сөз - маркум адамга карата
+        колдонулуучу сөз»</em> ("Ramatylyk is a word used to refer to a deceased person"), and it correctly
+        identifies the placement pattern before and after a name ("Раматылык Чубак ажы," "Ырматылык атам") and the
+        Russian equivalents ("покойный," "светлой памяти").
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>What went wrong: <span class="verdict-bad">overreach into misinformation</span></h3>
+      <p>
+        Grok closes with «Бул сөз көбүнчө мусулмандар арасында колдонулат», meaning "this word is used mostly
+        among Muslims." That line is inaccurate. <strong>Ramatylyk is ordinary, everyday Kyrgyz vocabulary</strong>,
+        used across the Kyrgyz-speaking population regardless of religious practice, the same way "покойный" or
+        "светлой памяти" function in Russian without signaling the speaker's faith. Framing a core piece of everyday
+        Kyrgyz through a primarily religious lens misrepresents how the word is actually used, and risks flattening
+        a much broader, more secular linguistic reality into a narrower one.
+      </p>
+      <p>
+        Gemini's answer, by contrast, defines the word by grounding it directly in the Kyrgyz explanatory
+        dictionary, «...дүйнөдөн кайткан кишини... эскергенде колдонулуучу сөз», with example sentences
+        and <span class="verdict-good">no religious framing at all</span>, which matches how the word is actually
+        used day to day.
+      </p>
+    </div>
+
+    <p>
+      This is the kind of error a fluent-but-non-native reviewer would likely wave through, because the Kyrgyz is
+      grammatical and confident-sounding. Catching it requires a reviewer who actually lives inside the language's
+      cultural context, not just its grammar.
+    </p>
+  </details>
+
+  <details class="section-details" id="voice-dubbing" open>
+    <summary>Voice &amp; Dubbing: <em>Inside Out</em>, Kyrgyz Dub</summary>
+    <p class="lede">
+      Almost a decade ago, I co-organized and voiced Sadness for an independent Kyrgyz dub of Pixar's
+      <em>Inside Out</em>, produced with a local recording studio because I wanted Kyrgyz-speaking audiences to have
+      real animated content in their own language. Below is a confirmation from the studio owner, who was also
+      co-leader of the initiative, followed by an audio sample of the Joy and Sadness dialogue with the transcript
+      underneath it.
+    </p>
+
+    <div class="card">
+      <h3>Studio confirmation</h3>
+      <blockquote>
+        "Working with you was a pleasure. You have good diction, natural-sounding Kyrgyz, and you were always
+        responsible and prepared for recording sessions."
+      </blockquote>
+      <div class="cite">Timur, Owner and Sound Engineer, Muzik Lab (Bishkek, Kyrgyzstan)</div>
+
+      <details>
+        <summary>Show full email correspondence with screenshots and English translation</summary>
+        <div style="margin-top:14px;">
+          <div class="email-label">My outreach, July 27, 2026</div>
+          <img class="email-shot" src="assets/email-1-request.png" alt="Email requesting confirmation of the Inside Out voice-over project, sent to Timur">
+          <p class="translation">
+            Hello, Timur. I'm writing about something that I hope won't take much of your time. In 2015 to 2016 I
+            worked on voice-over for two animated films together with your studio. I'm currently applying for a
+            position that requires confirmed voice-over experience and Kyrgyz language proficiency. Your written
+            confirmation of our work, as the studio owner and sound engineer, along with any surviving recordings,
+            would help me enormously in this selection process. I would be grateful if you could help with two
+            things. First, briefly confirm the project in your reply, mentioning the names of the two animated
+            films, my roles, and approximate work dates. Second, send any audio fragments with my voice if you
+            still have them, the more samples the better. It would also be a huge plus if you could add a few
+            sentences as a reference about my Kyrgyz language ability, work ethic, and your experience
+            collaborating with me. Thank you in advance for your help and for the time we once worked together.
+          </p>
+        </div>
+        <div style="margin-top:22px;">
+          <div class="email-label">Timur's reply</div>
+          <img class="email-shot" src="assets/email-2-reply.png" alt="Timur's reply confirming the project, with the surviving audio fragment attached">
+          <p class="translation">
+            Hi Kamila. I searched our archives and found fragments of your voice work from our project, the Kyrgyz
+            dub of <em>Inside Out</em> (2015 to 2016). You were a co-organizer of the project and voiced Sadness.
+            It was a student-led initiative we produced ourselves. It was a pleasure working with you, you have
+            good diction, natural-sounding Kyrgyz, and you were always responsible and well-prepared for recording
+            sessions. I'm attaching the surviving audio fragment. If you need anything else, let me know.
+          </p>
+        </div>
+      </details>
+    </div>
+
+    <div class="card">
+      <h3>Kyrgyz localization of Pixar's <em>Inside Out</em></h3>
+      <div class="meta-row">
+        <span class="tag">2015-2016</span>
+        <span class="tag">Muzik Lab, Bishkek</span>
+        <span class="tag">Co-organizer</span>
+        <span class="tag">Voice Actress (Sadness)</span>
+      </div>
+      <audio controls preload="none">
+        <source src="assets/sadness-sample.mp3" type="audio/mpeg">
+      </audio>
+      <div class="audio-caption">Voice sample, Sadness, about 45 seconds, from the "Core Memory" scene, transcript below</div>
+
+      <h3 style="margin-top:26px;">Transcript</h3>
+      <p style="font-size:14px; color:var(--muted); margin-bottom:6px;">
+        This transcript is not a literal translation, lines were adapted for natural spoken rhythm and lip-sync
+        timing.
+      </p>
+      <p style="font-size:13px; color:var(--muted); margin-bottom:16px;">
+        I voice Sadness. Joy's lines are performed by a fellow cast member and included for scene context.
+      </p>
+
+      <div class="line-pair">
+        <span class="speaker joy">Joy</span>
+        <div>
+          <div class="en">Sadness, what are you doing?</div>
+          <div class="ky">Кайгы, эмне кылып жатасын?</div>
+        </div>
+      </div>
+      <div class="line-pair">
+        <span class="speaker sadness">Sadness</span>
+        <div>
+          <div class="en">It looked like one was crooked so I opened it and then it fell out. I...</div>
+          <div class="ky">Бирөөсү жыгылып калчудай турган, анан мен ача койсом, түшүп кетти.</div>
+        </div>
+      </div>
+      <div class="line-pair">
+        <span class="speaker sadness">Sadness</span>
+        <div>
+          <div class="en">It's just that... I wanted to maybe hold one.</div>
+          <div class="ky">Болгону... Балким, бирөөсүн кармагым келди.</div>
+        </div>
+      </div>
+      <div class="line-pair">
+        <span class="speaker sadness">Sadness</span>
+        <div>
+          <div class="en">Joy!</div>
+          <div class="ky">Кубаныч!</div>
+        </div>
+      </div>
+      <div class="line-pair">
+        <span class="speaker joy">Joy</span>
+        <div>
+          <div class="en">Whoa, whoa.</div>
+          <div class="ky">Тийбей эле кой!</div>
+        </div>
+      </div>
+      <div class="line-pair">
+        <span class="speaker joy">Joy</span>
+        <div>
+          <div class="en">Sadness, you nearly touched a Core Memory.</div>
+          <div class="ky">Кайгы, сен Өзгөчө эс-тутумду кармап сала жаздадың.</div>
+        </div>
+      </div>
+      <div class="line-pair">
+        <span class="speaker joy">Joy</span>
+        <div>
+          <div class="en">And when you touch them, we can't change them back.</div>
+          <div class="ky">Сен буларды кармагандан кийин, кайра өзгөртө албайбыз.</div>
+        </div>
+      </div>
+      <div class="line-pair">
+        <span class="speaker sadness">Sadness</span>
+        <div>
+          <div class="en">I know. I'm sorry. Something's wrong with me.</div>
+          <div class="ky">Билем. Кечиргиле. Эмнегедир өзүмдү түшүнө албайтам.</div>
+        </div>
+      </div>
+      <div class="line-pair">
+        <span class="speaker sadness">Sadness</span>
+        <div>
+          <div class="en">It's like I'm having a breakdown.</div>
+          <div class="ky">Өзүнчө эле көңүлүм чөгүп жатат.</div>
+        </div>
+      </div>
+      <div class="line-pair">
+        <span class="speaker joy">Joy</span>
+        <div>
+          <div class="en">You're not having a breakdown. It's stress.</div>
+          <div class="ky">Көңүлүн чөккөн жок. Бул болгону стресс.</div>
+        </div>
+      </div>
+      <div class="line-pair">
+        <span class="speaker sadness">Sadness</span>
+        <div>
+          <div class="en">I keep making mistakes like that. I'm awful.</div>
+          <div class="ky">Ката эле кетирип жүрөм. Мен жөндөмсүз...</div>
+        </div>
+      </div>
+      <div class="line-pair">
+        <span class="speaker joy">Joy</span>
+        <div>
+          <div class="en">No, you're not.</div>
+          <div class="ky">Жок, андай эмессиң.</div>
+        </div>
+      </div>
+      <div class="line-pair">
+        <span class="speaker sadness">Sadness</span>
+        <div>
+          <div class="en">And annoying.</div>
+          <div class="ky">Кыжырга тийген...</div>
+        </div>
+      </div>
+      <div class="line-pair">
+        <span class="speaker joy">Joy</span>
+        <div>
+          <div class="en">You know what? You can't focus on what's going wrong.</div>
+          <div class="ky">Билесиңби? Эмне кылышты билбей жатсаң.</div>
+        </div>
+      </div>
+      <div class="line-pair">
+        <span class="speaker joy">Joy</span>
+        <div>
+          <div class="en">There's always a way to turn things around, to find the fun.</div>
+          <div class="ky">Аны чечүү үчүн дайыма жол табылат, сен ишенсен эле болду!</div>
+        </div>
+      </div>
+      <div class="line-pair">
+        <span class="speaker sadness">Sadness</span>
+        <div>
+          <div class="en">Yeah. Find the fun.</div>
+          <div class="ky">Ооба, жыргаш керек…</div>
+        </div>
+      </div>
+
+      <p style="font-size:13px; color:var(--muted); margin-top:16px;">
+        Full script for the entire film (English to Kyrgyz, timestamped) available on request.
+      </p>
+    </div>
+  </details>
+
+  <footer>
+    Kamila Kalchakeeva · kkalchakeeva@gmail.com
+  </footer>
+
+</div>
+</body>
+</html>
